@@ -5,24 +5,25 @@
 
 ---
 
-## 🏷 1. Именование (Naming)
+## 1. Именование (Naming)
 
-| Сущность | Стиль | Пример | Примечание |
-|----------|-------|--------|------------|
-| **Классы** | `PascalCase` | `SpawnManager`, `NoteData` | Существительное |
-| **Интерфейсы** | `I + PascalCase` | `IPoolable`, `IResettable` | Префикс `I` обязателен |
-| **Методы** | `PascalCase` | `SpawnNote()`, `CalculateScore()` | Глагол + существительное |
-| **Публичные поля** | `PascalCase` | `public float ScrollSpeed;` | Для инспектора и внешних классов |
-| **Приватные поля** | `_ + camelCase` | `private int _streakCount;` | Подчеркивание + верблюжий регистр |
-| **Локальные переменные** | `camelCase` | `float currentTime`, `int noteIndex` | Без подчеркивания |
-| **Сериализуемые поля** | `[SerializeField]` + `_camelCase` | `[SerializeField] private float _bpm;` | Видно в инспекторе, но приватно |
-| **Свойства (Properties)** | `PascalCase` | `public int Health { get; private set; }` | Использовать вместо публичных полей, если есть логика |
-| **Константы** | `PascalCase` | `public const float MAX_VOLUME = 1.0f;` | Без префиксов (`k_`, `c_`) |
-| **Статические поля** | `PascalCase` | `public static GameManager Instance;` | Для синглтонов |
+| Сущность                  | Стиль                             | Пример                                    | Примечание                                            |
+| ------------------------- | --------------------------------- | ----------------------------------------- | ----------------------------------------------------- |
+| **Классы**                | `PascalCase`                      | `SpawnManager`, `NoteData`                | Существительное                                       |
+| **Интерфейсы**            | `I + PascalCase`                  | `IPoolable`, `IResettable`                | Префикс `I` обязателен                                |
+| **Методы**                | `PascalCase`                      | `SpawnNote()`, `CalculateScore()`         | Глагол + существительное                              |
+| **Публичные поля**        | `PascalCase`                      | `public float ScrollSpeed;`               | Для инспектора и внешних классов                      |
+| **Приватные поля**        | `_ + camelCase`                   | `private int _streakCount;`               | Подчеркивание + верблюжий регистр                     |
+| **Локальные переменные**  | `camelCase`                       | `float currentTime`, `int noteIndex`      | Без подчеркивания                                     |
+| **Сериализуемые поля**    | `[SerializeField]` + `_camelCase` | `[SerializeField] private float _bpm;`    | Видно в инспекторе, но приватно                       |
+| **Свойства (Properties)** | `PascalCase`                      | `public int Health { get; private set; }` | Использовать вместо публичных полей, если есть логика |
+| **Константы**             | `PascalCase`                      | `public const float MAX_VOLUME = 1.0f;`   | Без префиксов (`k_`, `c_`)                            |
+| **Статические поля**      | `PascalCase`                      | `public static GameManager Instance;`     | Для синглтонов                                        |
+| id                        | snake_case                        | uta_mainscreen_happy                      | --                                                    |
 
 ---
 
-## 📁 2. Организация файлов и папок
+## 2. Организация файлов и папок
 
 - **Один файл = один класс** (исключение: маленькие Enum или вспомогательные структуры).
 - Название файла должно **строго совпадать** с именем класса внутри (`SpawnManager.cs` → `class SpawnManager`).
@@ -34,7 +35,7 @@
 
 ---
 
-## 📐 3. Форматирование (Formatting)
+## 3. Форматирование (Formatting)
 
 - **Отступы:** 4 пробела (или табуляция — **НЕ СМЕШИВАТЬ**! Включи в IDE автоматическую замену).
   *Мы используем стиль Allman (скобка на той же строке):*
@@ -50,7 +51,7 @@
     - Одна пустая строка между методами.    
     - Одна пустая строка между `using` и `namespace`.
     - Не используй больше одной пустой строки подряд.
-## 🧩 4. Комментирование (Comments)
+## 4. Комментирование (Comments)
 
 - **`///`** — XML-комментарий **обязателен** для:
 	- Публичных методов (описывает `param` и `returns`).  
