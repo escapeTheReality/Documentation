@@ -1,6 +1,6 @@
-## 📆 DD-MM-YYYY
+## DD-MM-YYYY
 
-### 🧑‍💻 @username
+### @username
 - **Что сделано:**
 - 
 - 
