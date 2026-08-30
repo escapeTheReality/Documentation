@@ -11,7 +11,7 @@ Assets/
 │   ├── Scenes/
 │   │   ├── Main/
 │   │   ├── Loadings/
-│   │   ├── Meets(позже может быть переименована)
+│   │   ├── Meets
 │   │   └── Gameplay/
 │   │       ├── Levels/
 │   │       └── Story/
@@ -32,6 +32,7 @@ Assets/
 │   └── StreamingAssets/
 │       └── Songs/
 ├── Graphics/
+│   ├── Animations/
 │   ├── Materials/
 │   ├── Shaders/
 │   ├── Sprites/
@@ -40,8 +41,6 @@ Assets/
 │   │   ├── Characters/
 │   │   └── UI/
 ├── Plugins/
-├── ? StreamingAssets/
-├── Docs
 └── Settings/
 ```
 ## \_Project
@@ -120,8 +119,5 @@ Assets/
 *Интерфейсные текстуры (кнопки, панели, иконки)*
 ## Plugins
 *Сторонние библиотеки и плагины (например, Newtonsoft.Json)*
-## StreamingAssets
-## Docs 
-*Хранение файлов документации в формате  \*.md*
 ## Setting
 *Опционально) Глобальные настройки проекта*
